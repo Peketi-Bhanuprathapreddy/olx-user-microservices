@@ -8,7 +8,7 @@ stage('checkout') {
 
 steps {
 
-git 'https://github.com/mohammadazeez963/javaProject.git'
+git 'https://github.com/Peketi-Bhanuprathapreddy/olx-user-microservices.git'
 
 }
 
