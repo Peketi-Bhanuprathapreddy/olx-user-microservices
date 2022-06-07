@@ -1,59 +1,29 @@
 pipeline {
-
-agent any
-
-stages {
-
-stage('checkout') {
-
+agent any stages {
+stage('check out') {
 steps {
-
-git 'https://github.com/Peketi-Bhanuprathapreddy/olx-user-microservices.git'
-
+git 'https://github.com/ParameshSPS/Olx-Users-Microservice.git'
 }
-
 }
-
 stage('compile') {
-
 steps {
-
 echo 'compiling'
-
 }
-
 }
-
-stage('Run') {
-
+stage('running') {
 steps {
-
-echo 'Running'
-
+echo 'running'
 }
-
 }
-
-stage('Test Report using jacoco') {
-
+stage('test report using jacoco') {
 steps {
-
 echo 'jacoco'
-
 }
-
 }
-
-stage('Building Docker Image') {
-
+stage('building docker image') {
 steps {
-
-echo 'Building Docker Image'
-
+echo 'building docker image'
 }
-
 }
-
 }
-
 }
