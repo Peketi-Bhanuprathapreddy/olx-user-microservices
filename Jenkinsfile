@@ -15,7 +15,7 @@ bat 'mvn package'
 }
 stage('test report using jacoco') {
 steps {
-echo 'jacoco'
+jacoco()
 }
 }
 stage('building docker image') {
